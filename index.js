@@ -325,9 +325,16 @@ function tallyUpDonations(/* CODE HERE */) {
  * 
  * 1. What is the difference between counter1 and counter2?
  * 
+ * In counter1 both count and the function are bound within the function scope.  In counter2, both are within the global scope.
+ * When counter1 is console.logged the function is logged. When counter2 is logged just 0 is repeatedly logged.
+ * 
  * 2. Which of the two uses a closure? How can you tell?
  * 
+ * counter1 uses closure because counter() refers to a variable established in the local scope.
+ * 
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
+ * 
+ * counter1 would be better when you want to use a count, but destroy the memory of the variables after you have the count. counter2 would be better when you want to keep the variables for later use in the global scope.
  *
 */
 
