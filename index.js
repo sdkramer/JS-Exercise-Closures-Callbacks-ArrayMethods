@@ -157,9 +157,15 @@ function processDuplicateFree(list, callback) {
  * 
  * [2] Invoking `lowerCaseStrings` with `['a', 'b', 'c' ]` will return `[ 'a', 'b', 'c' ]`.
 */
-function lowerCaseStrings(/* code here */) {
-  /* code here */
+function lowerCaseStrings(strings) {
+  let lower = [];
+  strings.forEach(function(item){
+     lower.push(item.toLowerCase());
+  });
+  return lower;
 }
+  /* code here */
+
 
 /**
  * ### Challenge `isItAnApple`
