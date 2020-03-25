@@ -334,7 +334,7 @@ function tallyUpDonations(/* CODE HERE */) {
  * 
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
  * 
- * counter1 would be better when you want to use a count, but destroy the memory of the variables after you have the count. counter2 would be better when you want to keep the variables for later use in the global scope.
+ * counter1 would be better when you want to use a variable that only the inner function can access. counter2 would be better when you want to keep the variables for later use in the global scope.
  *
 */
 
